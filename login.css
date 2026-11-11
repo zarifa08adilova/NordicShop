@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Playfair Display", serif;
+}
+
+body{
+    background-color: #DCD1C7;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #616F84;
+    height: 73.3px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav-logo-img{
+    width: 110px;
+}
+
+#nav-logo-img:hover{
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    color: #DCD1C7;
+    margin-right: 20px;
+}
+
+#nav-menu-items{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+#nav-menu-items:hover{
+    cursor: pointer;
+    border-bottom: #DCD1C7 solid 0.5px;
+}
+
+nav a{
+    color: #DCD1C7;
+    text-decoration: none;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #685C54;
+    align-items: center;
+    margin-top: 300px;
+    width: 500px;
+    height: 620px;
+    border-radius: 10px;
+}
+
+#profile-icon{
+    padding-top: 100px;
+    width: 130px;
+}
+
+#sign-in{
+    font-family: "Playfair Display", serif;
+    color: #DCD1C7;
+    margin-top: 10px;
+}
+
+.sign-in-form{
+    align-self: center;
+    width: 270px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+}
+
+.username-password{
+    color: #DCD1C7;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 5px;
+}
+
+#username-password{
+    height: 25px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #685C54;
+    margin-bottom: 10px;
+    background-color: #DCD1C7;
+}
+
+#sign-in-btn{
+    width: 100px;
+    align-self: center;
+    height: 25px;
+    font-size: large;
+    font-family: "Playfair Display", serif;
+    border: none;
+    background-color: #616F84;
+    color: #DCD1C7;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#sign-in-btn:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+#create{
+    color: #DCD1C7;
+    font-size: medium;
+}
+
+#create a{
+    text-decoration: none;
+    color: #DCD1C7;
+    font-weight: lighter;
+    font-size: small;
+}
+
+#create a:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #616F84;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 30px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    color: #DCD1C7;
+}
+
+#footer-logo-img{
+    position: relative;
+    top: -30px;
+    left: -10px;
+    width: 120px;
+}
+
+#footer-logo-img:hover{
+    cursor: pointer;
+}
+
+.footer-abt{
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+}
+
+.footer-link{
+    color: #DCD1C7;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-link:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.footer-link:visited{
+    color: #917E71;
+}
+
+.newsletter-socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter{
+    color: #DCD1C7;
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+#newsletter-form{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+
+#email{
+    border: none;
+    width: 140px;
+    height: 23px;
+    padding-left: 10px;
+    margin-right: 8px;
+    background-color: #DCD1C7;
+    color: #685C54;
+    border-radius: 10px;
+}
+
+#subscribe{
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #685C54;
+    color: #DCD1C7;
+}
+
+#subscribe:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+}
+
+.social{
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: #685C54;
+    border: none;
+    color: #DCD1C7;
+    font-family: "Playfair Display", serif;
+    border-radius: 50%;
+}
+
+.social:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+hr{
+    max-width: 1200px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    background-color: #DCD1C7;
+}
+
+#copyright{
+    color: #DCD1C7;
+    align-self: center;
+    font-size: normal;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width:1024px){
+
+    .login-box{
+        width:90%;
+        max-width:500px;
+        margin:150px auto 0;
+    }
+
+    footer{
+        margin-top:150px;
+    }
+
+    .footer-info{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:40px;
+    }
+
+    hr{
+        width:90%;
+        margin:20px auto;
+    }
+
+}
+
+
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+        height:auto;
+        padding:15px;
+    }
+
+    .nav-menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin:15px 0;
+        padding-top:0;
+    }
+
+    #nav-menu-items{
+        margin:10px;
+        padding-left:0;
+    }
+
+    .login-box{
+        width:95%;
+        max-width:350px;
+        height:auto;
+        padding:40px 20px;
+        margin:100px auto 0;
+    }
+
+    #profile-icon{
+        width:100px;
+        padding-top:0;
+        margin-bottom:20px;
+    }
+
+    .sign-in-form{
+        width:100%;
+        height:auto;
+    }
+
+    #username-password{
+        width:100%;
+    }
+
+    #sign-in-btn{
+        width:140px;
+    }
+
+    footer{
+        margin-top:100px;
+    }
+
+    .footer-info{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    #newsletter-form{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    #email,
+    #subscribe{
+        width:220px;
+    }
+
+    .socials{
+        justify-content:center;
+        align-self:center;
+    }
+
+    .social{
+        margin:0 10px;
+    }
+
+    hr{
+        width:90%;
+        margin:20px auto;
+    }
+
+}
+
+
+
+@media (max-width:480px){
+
+    #sign-in{
+        font-size:1.8rem;
+    }
+
+    .login-box{
+        max-width:300px;
+        padding:30px 15px;
+    }
+
+    #profile-icon{
+        width:80px;
+    }
+
+    #footer-logo-img{
+        width:100px;
+        top:0;
+        left:0;
+    }
+
+    #copyright{
+        text-align:center;
+        padding:0 15px;
+    }
+
+}
